@@ -44,7 +44,7 @@ export function createTranslateLoader(http: HttpClient) {
     VglModule,
     UserModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, TestComponent],
   providers: [AuthGuard, AuthService, UserStateService, { provide: RouteReuseStrategy, useClass: CustomReuseStrategy }],
   bootstrap: [AppComponent]
 })
