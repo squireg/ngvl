@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
+import { TestComponent } from './test.component';
 
 const routes: Routes = [
   { path: '', loadChildren: './layout/layout.module#LayoutModule' },
+  { path: 'test', component: TestComponent },
   { path: 'login', loadChildren: './login/login.module#LoginModule' },
   { path: 'signup', loadChildren: './signup/signup.module#SignupModule' },
   { path: 'error', loadChildren: './server-error/server-error.module#ServerErrorModule' },
